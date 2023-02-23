@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "prettier.bracketSameLine": true,
+  "prettier.requireConfig": true,
+  "prettier.jsxSingleQuote": true,
+  "editor.formatOnPaste": true,
+  "prettier.singleQuote": true,
+  "prettier.withNodeModules": true,
+  "prettier.resolveGlobalModules": true,
+  "prettier.requirePragma": true,
+  "prettier.useEditorConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
+    "source.fixAll.stylelint": true
+  },
+  "stylelint.validate": ["css", "postcss", "less", "scss", "sass"]
+}
