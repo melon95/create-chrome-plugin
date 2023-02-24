@@ -1,13 +1,14 @@
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
+const ManifestWebpackPlugin = require('./manifest-plugin')
 
 /**
  * @type {import('webpack').Configuration}
  */
 module.exports = {
   entry: {
-    popup: path.resolve(__dirname, '../src/popup/index.tsx'),
+    action: path.resolve(__dirname, '../src/action/index.tsx'),
     background: path.resolve(__dirname, '../src/background/index.ts'),
     contentScript: path.resolve(__dirname, '../src/contentScript/index.ts')
   },
@@ -26,16 +27,20 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, '../public/popup.html'),
-      chunks: ['popup'],
-      filename: 'popup.html'
-
+      template: path.resolve(__dirname, '../public/action.html'),
+      chunks: ['action'],
+      filename: 'action.html'
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'public', to: '', filter: (resourcePath) => !resourcePath.endsWith('.html') }
+        {
+          from: 'public',
+          to: '',
+          filter: (resourcePath) => !resourcePath.endsWith('.html')
+        }
       ]
-    })
+    }),
+    new ManifestWebpackPlugin()
   ],
   resolve: {
     extensions: ['.ts', '.tsx']
