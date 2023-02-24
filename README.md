@@ -10,11 +10,5 @@
 
 ## TODO
 
-- [ ] 配置文件来源
-  - manifest.json（根目录下）
-  - package.json
-    - manifest 字段
-- [ ] 构建优化
-  - 避免公共模块
 - [ ] 命令式创建
 - [ ] 自动构建
