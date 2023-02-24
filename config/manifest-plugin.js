@@ -4,7 +4,6 @@ const pageageJson = require('../package.json')
 const { name, version, description, manifest } = pageageJson
 
 const manifestRootPath = path.resolve(__dirname, '../manifest.json')
-const manifestDistPath = path.resolve(__dirname, '../dist/manifest.json')
 
 const defaultManifest = {
   action: {
