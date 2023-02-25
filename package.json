@@ -1,17 +1,23 @@
 {
-  "name": "browser-plugin-cli",
+  "name": "chrome-plugin-cli",
   "version": "1.0.0",
-  "main": ".eslintrc.js",
   "scripts": {
     "build": "webpack --config ./config/prod.config.js",
     "commit": "cz",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "chrome plugin",
+    "chrome extension",
+    "react",
+    "typescript"
+  ],
+  "repository": "https://github.com/melon95/chrome-plugin-cli",
+  "homepage": "https://github.com/melon95/chrome-plugin-cli",
+  "author": "melon.li",
+  "license": "MIT",
+  "description": "the package is used to quickly generation chrome plugin template useing React and Typescript",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -71,5 +77,9 @@
   "bin": {
     "create-chrome-plugin": "bin/create.js",
     "ccp": "bin/create.js"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
   }
 }

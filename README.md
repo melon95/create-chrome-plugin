@@ -1,6 +1,10 @@
-# Browser Plugin Cli
+# Chrome Plugin Cli
 
-通过使用 React 以及 React 的生态 快速创建一个浏览器插件
+通过使用 React 以及 React 的生态 快速创建一个[浏览器插件](https://developer.chrome.com/docs/extensions/mv3/)
+
+> 只支持 manifest v3 版本
+
+## 目录结构
 
 在 src 下采用约定式目录：
 
