@@ -32,7 +32,6 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
           tag_name: v${{steps.version.outputs.value}}
-          release_name: v${{steps.version.outputs.value}}
           body_path: ./CHANGELOG.md
           draft: false
           prerelease: false
