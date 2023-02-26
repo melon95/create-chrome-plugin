@@ -5,7 +5,7 @@
     "build": "webpack --config ./config/prod.config.js",
     "commit": "cz",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "prepare": "husky install"
+    "preinstall": "husky install"
   },
   "keywords": [
     "chrome plugin",
