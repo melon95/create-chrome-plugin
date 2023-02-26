@@ -1,26 +1,31 @@
 {
-  "name": "@melon95/create-chrome-plugin",
-  "version": "1.0.2",
+  "name": "@melon_did/create-chrome-plugin",
+  "version": "1.0.9",
   "scripts": {
     "build": "webpack --config ./config/prod.config.js",
     "commit": "cz",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "preinstall": "husky install"
+    "prepare": "husky install"
   },
   "keywords": [
     "chrome plugin",
     "chrome extension",
+    "manifest v3",
     "react",
     "typescript"
   ],
-  "repository": "https://github.com/melon95/chrome-plugin-cli",
-  "homepage": "https://github.com/melon95/chrome-plugin-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melon95/create-chrome-plugin.git"
+  },
+  "homepage": "https://github.com/melon95/create-chrome-plugin",
   "author": "melon.li",
   "license": "MIT",
   "description": "the package is used to quickly generation chrome plugin template useing React and Typescript",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "fs-extra": "^11.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
@@ -50,7 +55,6 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
-    "fs-extra": "^11.1.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
@@ -75,11 +79,17 @@
     }
   },
   "bin": {
-    "create-chrome-plugin": "bin/create.js",
-    "ccp": "bin/create.js"
+    "create-chrome-plugin": "bin/create.js"
   },
   "engines": {
     "node": ">=16",
     "pnpm": ">=7"
+  },
+  "bugs": {
+    "url": "https://github.com/melon95/create-chrome-plugin/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }

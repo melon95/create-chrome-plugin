@@ -14,11 +14,12 @@
 
 ## 脚手架
 
-通过执行 `npx create-chrome-plugin name` 来快速创建一个项目
+通过执行 `npx @melon_did/create-chrome-plugin name` 来快速创建一个项目
 
 > 如果 name 文件夹存在并且不为空，会强制把 name 文件夹清空
 
 ## TODO
 
 - [x] 命令式创建
+- [ ] 模板抽离
 - [ ] 自动构建
