@@ -28,7 +28,7 @@ jobs:
         id: description
         uses: juliangruber/read-file-action@v1
         with:
-          path: ./CHANGELOG
+          path: ./CHANGELOG.md
 
       - name: Create Release
         id: create_release
