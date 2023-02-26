@@ -91,5 +91,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
-  }
+  },
+  "packageManager": ">=pnpm@7.9.0"
 }
