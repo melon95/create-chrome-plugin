@@ -1,6 +1,6 @@
 {
-  "name": "@melon_did/create-chrome-plugin",
-  "version": "1.0.9",
+  "name": "@coreys/create-chrome-plugin",
+  "version": "1.0.10",
   "scripts": {
     "build": "webpack --config ./config/prod.config.js",
     "commit": "cz",
